@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fiscal Calendar Input</title>
+</head>
+<body>
+<h2>Fiscal Calendar Input</h2>
+<form action="/generate-calendar" method="post">
+    <label for="fiscal_start_date">Fiscal Start Date:</label><br>
+    <input type="date" id="fiscal_start_date" name="fiscal_start_date"><br>
+    <label for="fiscal_end_date">Fiscal End Date:</label><br>
+    <input type="date" id="fiscal_end_date" name="fiscal_end_date"><br>
+    <label for="calendar_type">Calendar Type:</label><br>
+    <select id="calendar_type" name="calendar_type">
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="454">454</option>
+        <option value="445">445</option>
+        <option value="544">544</option>
+    </select><br>
+    <label for="quarter_prefix">Quarter Prefix:</label><br>
+    <input type="text" id="quarter_prefix" name="quarter_prefix" value="Q"><br>
+    <label for="fiscal_year_prefix">Fiscal Year Prefix:</label><br>
+    <input type="text" id="fiscal_year_prefix" name="fiscal_year_prefix" value="YR"><br>
+    <label for="start_day_of_week">Start Day of Week (0=Monday, 1=Sunday):</label><br>
+    <input type="number" id="start_day_of_week" name="start_day_of_week" value="1"><br><br>
+    <input type="submit" value="Generate Calendar">
+</form>
+</body>
+</html>
